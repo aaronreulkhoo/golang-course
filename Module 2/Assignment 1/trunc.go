@@ -17,7 +17,6 @@ func main() {
 		}
 		fmt.Println("That's not a float!")
 		stdin.ReadString('\n')
-
 	}
 
 }
