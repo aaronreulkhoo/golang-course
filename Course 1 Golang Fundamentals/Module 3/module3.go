@@ -27,7 +27,7 @@ func arraysTest() {
 }
 
 // M3.1.2 Slices - a fragment of an existing array, size is variable - similar to python slicing
-// Has 3 properties - pointer -> start of slice, length -> #elements, capacity -> maximum possible #elements (array length - position)
+// Has 3 properties: Pointer -> start of slice ; Length -> #elements ; Capacity -> maximum possible #elements (array length - position)
 func slicesTest() {
 	arr := [...]string{"a", "b", "c"}
 	s1 := arr[1:3] // holds arr[1], arr[2]
