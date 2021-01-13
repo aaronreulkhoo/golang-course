@@ -18,7 +18,8 @@ func main() {
 	for i < len(ls) {
 		fmt.Printf("Please enter a value for %s: ", vars[i])
 		scanned, _ := stdin.ReadString('\n')
-		scanned = strings.Replace(scanned, "\r\n", "", -1) // comment out for UNIX systems
+		scanned = strings.Replace(scanned, "\r", "", -1)
+		scanned = strings.Replace(scanned, "\n", "", -1)
 		num, err := strconv.ParseFloat(scanned, 64)
 		if err == nil {
 			*ls[i] = num
