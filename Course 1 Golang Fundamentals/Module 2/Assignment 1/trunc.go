@@ -9,8 +9,7 @@ import (
 func main() {
 	stdin := bufio.NewReader(os.Stdin)
 	for {
-		fmt.Printf("Please enter a float: ")
-		_, err := fmt.Scan(&scanned)
+		scanned, err := scan()
 		if err == nil {
 			truncated := int(scanned)
 			fmt.Printf("Your integer is %d.", truncated)
